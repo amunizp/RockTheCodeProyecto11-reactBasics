@@ -30,7 +30,7 @@ export default function Fortnight(props) {
     })
 
     const waterElementsTimed = listHumiditiesTimes.map((pair) => (
-      <Link to={`/detail/${pair.time}`}>
+      <Link to={`/detail/${pair.time}`} key={`${pair.time}`}>
         <Droplet humidity={`${pair.humidity}`} svg={false} />
       </Link>
     ))
