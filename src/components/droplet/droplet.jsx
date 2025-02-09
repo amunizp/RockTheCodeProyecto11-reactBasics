@@ -29,7 +29,7 @@ const Droplet = ({
         <h4>{titleName}</h4>
         {svgElement}
       </div>
-      <p>{theTime}</p>
+      <p className='theTime'>{theTime}</p>
     </div>
   )
 }

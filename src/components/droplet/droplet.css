@@ -18,3 +18,8 @@
 svg {
   height: 5svh;
 }
+
+div.droplet p.theTime {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
