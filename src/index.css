@@ -97,20 +97,16 @@
   font-weight: 400;
   font-style: normal;
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   
-  /* background-color: var(--parkleys-bg-primary); */
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
+ 
+  background-color: var(--parkleys-bg-blank-color);
 }
 p {
     overflow-wrap: anywhere;
