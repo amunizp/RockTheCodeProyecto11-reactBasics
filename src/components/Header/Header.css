@@ -9,6 +9,7 @@ header {
   background-color: orangered;
 
   height: fit-content;
+  /* max-height: 10svh; */
   min-height: 5svh;
   min-width: var(--parkleys-phone-width);
 
