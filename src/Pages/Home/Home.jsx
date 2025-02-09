@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import './Home.css'
+import Droplets from '../../components/droplets/droplets'
 
-export class Home extends Component {
-  render() {
-    return (
-      <div className='Home'>
-        <PageTitle>Your Home</PageTitle>
-        <p>🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️</p>
-        <p>Trying to keep dry</p>
-        <p>🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️</p>
-      </div>
-    )
-  }
+const Home = () => {
+  return (
+    <article className='home'>
+      <PageTitle>Your Home</PageTitle>
+      <p>🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️</p>
+      <p>Trying to keep dry</p>
+      <p>🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️🌧️</p>
+      {/* <Droplets /> */}
+    </article>
+  )
 }
 
 export default Home

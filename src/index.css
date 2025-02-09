@@ -1,7 +1,139 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700 */
+
+:root {
+  /* root template content: RTC */
+  /* font related stuff */
+  --parkleys-font-primary: lato;
+  --parkleys-font-primary-strong: lato-black;
+  --parkleys-font-aside: droidserif;
+  --parkleys-font-heading1: 'Montagu Slab', serif;
+  --parkleys-font-heading2: Montserrat;
+  --parkleys-font-heading3-subheadings: lato-black;
+  /* --font-size-base: 16px; */
+  /* --font-size-slightlyLarger: 20px; */
+
+  /* spacings, caps and margins */
+
+  --parkleys-margin-xs: 10px;
+  --parkleys-margin-s: 20px;
+  --parkleys-margin-m: 30px;
+  --parkleys-margin-l: 40px;
+  --parkleys-margin-xl: 50px;
+  --parkleys-margin-section: 100px;
+
+  --parkleys-padding-xxs: 5px;
+  --parkleys-padding-xs: 10px;
+  --parkleys-padding-s: 20px;
+  --parkleys-padding-m: 30px;
+  --parkleys-padding-l: 40px;
+  --parkleys-padding-xl: 50px;
+
+  --parkleys-gap-xs: 10px;
+  --parkleys-gap-s: 20px;
+  --parkleys-gap-m: 30px;
+  --parkleys-gap-l: 40px;
+  --parkleys-gap-xl: 50px;
+  /* --spacing-small: 0.5rem; 8px */
+  /* --spacing-medium: 1rem; 16px */
+  /* --spacing-med-lg: 1.5rem; */
+  /* --spacing-large: 2rem; 32px */
+  /* --spacing-xlarge: 4rem; 64px */
+  --parkleys-max-width: 1000px;
+  --parkleys-tablet-width: 800px;
+  --parkleys-phone-width: 350px;
+
+  /*Branding colors*/
+  --parkleys-color: #b06c6c; /* the heading */
+  --parkleys-color-1: #4c2321;
+  --parkleys-color-2: #bf8988;
+  --parkleys-color-3: #de9291;
+  --parkleys-color-4: #ebe9f0;
+  --parkleys-color-5: #a2a0a9;
+  --parkleys-color-6: #4b5335;
+  --parkleys-color-text: #5a4a42;
+  --parkleys-color-footer:#295307 ;
+  /* background colours */
+  --parkleys-bg-primary: var(--parkleys-color-5);
+  --parkleys-bg-header: var(--parkleys-color);
+  --parkleys-bg-mesh-color: var(--parkleys-color-6);
+  --parkleys-bg-transparency: rgba(250, 250, 250, 0.9);
+  --parkleys-bg-blank-color: #ffffff;
+  --parkleys-color-border-primary: var(--parkleys-color-6);
+  --parkleys-color-border-comment: var(--parkleys-color-4);
+  --parkleys-color-error: var(--parkleys-color-3);
+  /* font colours */
+  --parkleys-font-color-p: var(--parkleys-color-text);
+  /* font sizes  */
+  --parkleys-font-size-m: 14px
+  /* aside is another word for pull quotes */
+  --parkleys-font-color-aside1: var(--parkleys-color-1);
+  --parkleys-font-color-aside2: var(--parkleys-color-2);
+  --parkleys-font-color-aside3: var(--parkleys-color-3);
+  --parkleys-font-color-aside4: var(--parkleys-color-4);
+  --parkleys-font-color-aside5: var(--parkleys-color-5);
+  /* heading colours */
+  --parkleys-font-color-h1-impact: var(--parkleys-color-4);
+  --parkleys-font-color-h2: var(--parkleys-color);
+  --parkleys-font-color-h2-span: var(--parkleys-color-3);
+  --parkleys-font-color-subheading: var(--parkleys-color-text);
+/* BORDER thickness */
+--parkleys-border-small: 2px;
+--parkleys-border-medium: 4px;
+--parkleys-border-large: 8px;
+--parkleys-border-xlarge: 16px;
+  /* BORDER RADIUS */
+  --parkleys-small-br: 2px;
+  --parkleys-medium-br: 4px;
+  --parkleys-large-br: 8px;
+  --parkleys-xlarge-br: 16px;
 }
+
+* {
+  font-family: 'Montagu Slab', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  
+  /* background-color: var(--parkleys-bg-primary); */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+p {
+    overflow-wrap: anywhere;
+   text-align: center;
+   max-width: 100%;
+   }
+
+   @media screen and (min-width: 576px) {
+    body {
+      width: var(--parkleys-phone-width);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      width: var(--parkleys-tablet-width);
+    }
+  }
+  
+  
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      width: var(--parkleys-max-width);
+    }
+  }

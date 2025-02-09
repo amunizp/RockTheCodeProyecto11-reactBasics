@@ -1,0 +1,21 @@
+/*Add the styles for your component here.*/
+
+.droplet {
+  background-color: aqua;
+  align-items: baseline;
+  max-width: calc(var(--parkleys-phone-width) / 3);
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.innerDroplet {
+  background-color: white;
+  /* border: 1px solid gray; */
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.droplet:hover {
+  cursor: pointer;
+}
+svg {
+  height: 5svh;
+}

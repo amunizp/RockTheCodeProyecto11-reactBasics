@@ -1,0 +1,9 @@
+/*Add the styles for your component here.*/
+section.droplets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: var(--parkleys-phone-width);
+  height: 100px;
+}

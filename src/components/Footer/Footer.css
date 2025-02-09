@@ -1,4 +1,34 @@
 /*Add the styles for your component here.*/
+footer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: green;
+
+  height: fit-content;
+  min-height: 5svh;
+  width: 100%;
+  min-width: var(--parkleys-phone-width);
+
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--parkleys-gap-s);
+}
+footer h4 {
+  font-family: var(--parkleys-font-heading1);
+  color: var(--parkleys-font-color-h1-impact);
+  align-self: center;
+  margin: 0;
+}
+
+/* 
 .footer {
   display: flex;
   justify-content: center;
@@ -7,4 +37,4 @@
   background-color: green;
   color: white;
   border-top: 1px solid #e9ecef;
-}
+} */

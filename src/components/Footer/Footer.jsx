@@ -2,9 +2,9 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer className='footer'>
       <h4>Trying to keep dry</h4>
-    </div>
+    </footer>
   )
 }
 

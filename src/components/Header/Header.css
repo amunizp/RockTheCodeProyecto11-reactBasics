@@ -1,5 +1,49 @@
 /*Add the styles for your component here.*/
-.header {
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: orangered;
+
+  height: fit-content;
+  min-height: 5svh;
+  min-width: var(--parkleys-phone-width);
+
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--parkleys-gap-s);
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header h1 {
+  font-family: var(--parkleys-font-heading1);
+  font-weight: 700;
+  color: var(--parkleys-font-color-h1-impact);
+  align-self: center;
+  margin: 0;
+}
+header .active {
+  border-bottom: 3px solid black;
+}
+
+header a {
+  color: var(--parkleys-font-color-h1-impact);
+}
+
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,4 +51,4 @@
   background-color: orangered;
   color: white;
   border-bottom: 1px solid #e9ecef;
-}
+} */
