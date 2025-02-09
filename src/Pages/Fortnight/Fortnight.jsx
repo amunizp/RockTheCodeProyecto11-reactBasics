@@ -3,6 +3,7 @@ import Droplet from '../../components/droplet/droplet'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import './Fortnight.css'
 import { ErrorBoundary } from 'react-error-boundary'
+import { Link } from 'react-router'
 
 export default function Fortnight(props) {
   const [data, setData] = useState(null)
@@ -24,8 +25,14 @@ export default function Fortnight(props) {
   if (data) {
     const listTimes = data.time
     const listHumidities = data.relative_humidity_2m
-    const waterElements = listHumidities.map((humidity) => (
-      <Droplet humidity={`${humidity}`} svg={false} />
+    const listHumiditiesTimes = listTimes.map((time, index) => {
+      return { time, humidity: listHumidities[index] }
+    })
+
+    const waterElementsTimed = listHumiditiesTimes.map((pair) => (
+      <Link to={`/detail/${pair.time}`}>
+        <Droplet humidity={`${pair.humidity}`} svg={false} />
+      </Link>
     ))
 
     return (
@@ -33,7 +40,7 @@ export default function Fortnight(props) {
         <PageTitle>Fortnight</PageTitle>
         <p>{`${data ? '' : 'Loading...'}`}</p>
         <ErrorBoundary fallback={<div>Something went wrong</div>}>
-          <section className='fortnight'>{waterElements}</section>
+          <section className='fortnight'>{waterElementsTimed}</section>
         </ErrorBoundary>
       </article>
     )

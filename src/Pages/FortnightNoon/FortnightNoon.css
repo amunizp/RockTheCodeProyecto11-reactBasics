@@ -11,3 +11,6 @@ section.fortnightNoon {
   align-items: center;
   flex-direction: row;
 }
+section.fortnightNoon a {
+  height: 100%;
+}

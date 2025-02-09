@@ -11,3 +11,7 @@ section.fortnight {
   align-items: center;
   flex-direction: row;
 }
+
+section.fortnight a {
+  height: 100%;
+}

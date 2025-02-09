@@ -2,7 +2,6 @@
 
 .droplet {
   background-color: aqua;
-  align-items: baseline;
   max-width: calc(var(--parkleys-phone-width) / 3);
   height: 100%;
   /* border: 2px solid black; */
