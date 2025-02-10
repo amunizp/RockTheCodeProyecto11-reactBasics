@@ -24,15 +24,22 @@ export default function Today(props) {
       <article className='today'>
         <PageTitle>Today</PageTitle>
         <ErrorBoundary fallback={<div>Something went wrong</div>}>
-          <section className='today'>
-            <Link to={`/detail/${data.hourly.time[204]}`}>
-              <Droplet
-                titleName='Midday'
-                theTime={`${data.hourly.time[204]}`}
-                humidity={`${data.hourly.relative_humidity_2m[204]}`}
-              />
-            </Link>
-          </section>
+          <div className='chart'>
+            <section className='today'>
+              <aside>
+                <p>Humidity 100% ➡️</p>
+                <p>Humidity 0% ➡️</p>
+              </aside>
+              <Link to={`/detail/${data.hourly.time[204]}`}>
+                <Droplet
+                  titleName=''
+                  theTime={`${data.hourly.time[204]}`}
+                  humidity={`${data.hourly.relative_humidity_2m[204]}`}
+                  svg={false}
+                />
+              </Link>
+            </section>
+          </div>
         </ErrorBoundary>
       </article>
     )

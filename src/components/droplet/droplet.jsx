@@ -4,7 +4,8 @@ const Droplet = ({
   titleName = '',
   humidity = '100',
   theTime = '',
-  svg = true
+  svg = true,
+  color = 'aqua'
 }) => {
   const svgElement = svg ? (
     <svg width='100%' viewBox='0 0 30 42'>
@@ -23,14 +24,17 @@ const Droplet = ({
       <path fill='blue' />
     </svg>
   )
+
   return (
-    <div className='droplet'>
-      <div className='innerDroplet' style={{ height: 100 - humidity + '%' }}>
-        <h4>{titleName}</h4>
-        {svgElement}
+    <>
+      <div className='droplet' style={{ 'background-color': color }}>
+        <div className='innerDroplet' style={{ height: 100 - humidity + '%' }}>
+          <h4>{titleName}</h4>
+          {svgElement}
+        </div>
+        <p className='theTime'>{theTime}</p>
       </div>
-      <p className='theTime'>{theTime}</p>
-    </div>
+    </>
   )
 }
 

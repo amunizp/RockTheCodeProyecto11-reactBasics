@@ -23,10 +23,17 @@ export default function FortnightNoon(props) {
   }, [])
 
   if (data) {
+    var dewReached = false
     const listTimes = data.time
     const listHumidities = data.relative_humidity_2m
     const listHumiditiesTimes = listTimes.map((time, index) => {
-      return { time, humidity: listHumidities[index] }
+      console.log('temperature: ' + data.temperature_2m[index])
+      console.log('dew_point ' + data.dew_point_2m[index])
+      console.log(data.temperature_2m[index] > data.dew_point_2m)
+      if (data.temperature_2m[index] < data.dew_point_2m[index]) {
+        dewReached = true
+      }
+      return { time, humidity: listHumidities[index], dewReached }
     })
 
     const waterElementsTimed = listHumiditiesTimes.map((pair) => (
@@ -37,6 +44,7 @@ export default function FortnightNoon(props) {
             pair.time.includes('T12:00') ? pair.time.slice(8, 10) : ''
           }`}
           svg={false}
+          color={dewReached ? 'red' : 'aqua'}
         />
       </Link>
     ))
