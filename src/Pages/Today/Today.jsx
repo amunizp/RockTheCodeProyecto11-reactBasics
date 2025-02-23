@@ -26,7 +26,7 @@ export default function Today(props) {
         <ErrorBoundary fallback={<div>Something went wrong</div>}>
           <div className='chart'>
             <section className='today'>
-              <aside>
+              <aside className='chart'>
                 <p>Humidity 100% ➡️</p>
                 <p>Humidity 0% ➡️</p>
               </aside>
