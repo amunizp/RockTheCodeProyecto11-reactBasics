@@ -22,7 +22,7 @@ export default function Today(props) {
   if (data) {
     return (
       <article className='today'>
-        <PageTitle>Today</PageTitle>
+        <PageTitle>Today At Noon</PageTitle>
         <ErrorBoundary fallback={<div>Something went wrong</div>}>
           <div className='chart'>
             <section className='today'>
@@ -33,7 +33,7 @@ export default function Today(props) {
               <Link to={`/detail/${data.hourly.time[204]}`}>
                 <Droplet
                   titleName=''
-                  theTime={`${data.hourly.time[204]}`}
+                  theTime={`${data.hourly.time[204].slice(0, 10)}`}
                   humidity={`${data.hourly.relative_humidity_2m[204]}`}
                   svg={false}
                 />

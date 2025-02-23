@@ -22,3 +22,7 @@ aside.chart {
   align-items: end;
   flex-direction: column;
 }
+
+div.droplet {
+  min-width: 100%;
+}
