@@ -104,14 +104,17 @@
   text-decoration: none;
   
 }
+html{
+  width: 100%;
+}
 body {
- 
+ min-width: 100%;
   background-color: var(--parkleys-bg-blank-color);
 }
 p {
     overflow-wrap: anywhere;
    text-align: center;
-   max-width: 100%;
+   max-width: var(--parkleys-tablet-width);;
    }
 
    @media screen and (min-width: 576px) {
