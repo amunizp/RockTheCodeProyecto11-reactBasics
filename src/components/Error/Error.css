@@ -1,0 +1,19 @@
+/*Add the styles for your component here.*/
+.error-message {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.retry-button {
+  background-color: var(--parkleys-color-2);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: var(--parkleys-color-1);
+}

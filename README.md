@@ -1,12 +1,29 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Design Improvements
 
-Currently, two official plugins are available:
+1. **Limited the width**: The app now has a max-width container so it doesn't stretch across the full screen
+2. **Modern design**: Added cards, shadows, rounded corners, and better spacing
+3. **Better color scheme**: Use existing color variables but applied them more consistently
+4. **Responsive layout**: Improved the mobile and desktop experience
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Content Improvements
 
-API Taken from https://api.open-meteo.com/v1/forecast?latitude=51.4314&longitude=-0.305&hourly=temperature_2m,relative_humidity_2m,dew_point_2m,vapour_pressure_deficit,wind_speed_10m&past_days=7
+1. **Added descriptive information**: Each page now has clear explanations about what the data represents
+2. **Better context**: Added information about the estate and condensation monitoring purpose
+3. **Improved navigation**: Added navigation links between pages for better user flow
+4. **Visual hierarchy**: Used headings, cards, and sections to organize information better
 
-documents: https://open-meteo.com/ and visual of data chosen: https://open-meteo.com/en/docs#latitude=51.4314&longitude=-0.305&current=&minutely_15=&hourly=temperature_2m,relative_humidity_2m,dew_point_2m,vapour_pressure_deficit,wind_speed_10m&daily=&past_days=7&models=
+### Functionality Improvements
+
+1. **Hover effects**: Added hover states for interactive elements
+2. **Data visualization**: Improved the presentation of humidity data with better labels and context
+3. **Loading and error states**: Added proper loading and error handling for a better user experience
+4. **Hover information**: Added hover information cards that show details without navigating away (this is a step toward the tooltip functionality)
+
+### Key Changes by Page
+
+- **Home**: Created a welcoming dashboard with clear navigation cards
+- **Today**: Added more context about the humidity reading and what it means
+- **Fortnight/FortnightNoon**: Improved the visualization with better spacing, labels, and hover information
+- **Detail**: Completely redesigned the detail page with a clearer layout and better explanation of the data.

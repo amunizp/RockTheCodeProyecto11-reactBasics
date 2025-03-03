@@ -14,3 +14,87 @@ section.fortnightNoon {
 section.fortnightNoon a {
   height: 100%;
 }
+
+.fortnightNoon-visualization {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.droplet-wrapper {
+  position: relative;
+  height: 150px;
+  width: 70px;
+  margin: 0 5px;
+}
+
+.droplet-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--parkleys-color-text);
+  height: 100%;
+}
+
+.date-label {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.timeline-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 0.9rem;
+}
+
+.timeline-section {
+  padding: 5px 10px;
+  color: #666;
+}
+
+.timeline-section.past {
+  color: #666;
+}
+
+.timeline-section.future {
+  color: var(--parkleys-color-1);
+  font-weight: 600;
+}
+
+.timeline-divider {
+  padding: 5px 10px;
+  background-color: var(--parkleys-color-1);
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.fortnight-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}

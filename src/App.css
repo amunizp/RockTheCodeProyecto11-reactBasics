@@ -3,7 +3,69 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 article {
-  height: 50svh;
+  min-height: 50vh;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.page-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  background-color: #e9f7fe;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.data-point {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.data-point:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  margin-bottom: 15px;
+  color: var(--parkleys-color-1);
+  font-weight: 600;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  color: var(--parkleys-color-text);
+  line-height: 1.6;
 }

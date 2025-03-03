@@ -1,17 +1,18 @@
 /*Add the styles for your component here.*/
 
 .droplet {
-  background-color: aqua;
+  background-color: rgb(110, 192, 240);
   max-width: calc(var(--parkleys-phone-width) / 3);
   height: 100%;
   /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
 }
 .innerDroplet {
   background-color: white;
-  /* border: 5px solid gray; */
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 100%;
@@ -19,6 +20,7 @@
 
 .droplet:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 svg {
   height: 5svh;
@@ -27,4 +29,21 @@ svg {
 div.droplet p.theTime {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+.droplet.today {
+  border: 3px solid var(--parkleys-color-1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.droplet.today::after {
+  content: 'Today';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--parkleys-color-1);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
 }

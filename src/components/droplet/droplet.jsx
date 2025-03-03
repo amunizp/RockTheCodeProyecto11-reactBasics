@@ -5,7 +5,8 @@ const Droplet = ({
   humidity = '100',
   theTime = '',
   svg = true,
-  color = 'aqua'
+  color = 'aqua',
+  isToday = false
 }) => {
   const svgElement = svg ? (
     <svg width='100%' viewBox='0 0 30 42'>
@@ -27,7 +28,10 @@ const Droplet = ({
 
   return (
     <>
-      <div className='droplet' style={{ 'background-color': color }}>
+      <div
+        className={`droplet ${isToday ? 'today' : ''}`}
+        style={{ backgroundColor: color }}
+      >
         <div className='innerDroplet' style={{ height: 100 - humidity + '%' }}>
           <h4>{titleName}</h4>
           {svgElement}
