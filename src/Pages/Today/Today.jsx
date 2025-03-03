@@ -153,8 +153,8 @@ export default function Today(props) {
                     titleName=''
                     theTime={`${currentTime.slice(0, 10)}`}
                     humidity={`${currentHumidity}`}
-                    svg={false}
-                    color={condensationRisk ? 'red' : 'aqua'}
+                    svg={true}
+                    color={condensationRisk ? 'red' : 'rgb(110, 192, 240)'}
                   />
                 </Link>
               </section>

@@ -104,7 +104,7 @@ export default function Detail(props) {
                 <div className='detail-visualization'>
                   <Droplet
                     humidity={`${humidity}`}
-                    svg={false}
+                    svg={true}
                     color={condensationRisk ? 'red' : 'rgb(110, 192, 240)'}
                   />
                 </div>

@@ -5,14 +5,14 @@ const Droplet = ({
   humidity = '100',
   theTime = '',
   svg = true,
-  color = 'aqua',
+  color = 'rgb(110, 192, 240)',
   isToday = false
 }) => {
   const svgElement = svg ? (
     <svg width='100%' viewBox='0 0 30 42'>
       <path
         fill='blue'
-        stroke='#000'
+        stroke='rgb(110, 192, 240)'
         strokeWidth='1.5'
         d='M15 3
            Q16.5 6.8 25 18
