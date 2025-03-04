@@ -65,7 +65,7 @@ export default function Today(props) {
     const currentHumidity = data.hourly.relative_humidity_2m[currentIndex]
     const currentTemp = data.hourly.temperature_2m[currentIndex]
     const currentDewPoint = data.hourly.dew_point_2m[currentIndex]
-    const condensationRisk = currentTemp < currentDewPoint
+    const condensationRisk = currentTemp <= currentDewPoint
 
     return (
       <article className='today'>

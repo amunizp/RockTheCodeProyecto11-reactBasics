@@ -79,7 +79,7 @@ export default function FortnightNoon(props) {
 
     const noonReadings = listTimes
       .map((time, index) => {
-        dewReached = listTemperatures[index] < listDewPoints[index]
+        dewReached = listTemperatures[index] <= listDewPoints[index]
         return {
           time,
           humidity: listHumidities[index],

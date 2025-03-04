@@ -79,7 +79,7 @@ export default function Detail(props) {
       const dewPoint = data.hourly.dew_point_2m[theDetailIndex]
       const pressure = data.hourly.vapour_pressure_deficit[theDetailIndex]
       const windSpeed = data.hourly.wind_speed_10m[theDetailIndex]
-      const condensationRisk = temperature < dewPoint
+      const condensationRisk = temperature <= dewPoint
 
       const formattedDate = new Date(dateTime).toLocaleDateString('en-GB', {
         weekday: 'long',

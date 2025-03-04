@@ -74,7 +74,7 @@ export default function Fortnight(props) {
     const listDewPoints = data.dew_point_2m
 
     const listHumiditiesTimes = listTimes.map((time, index) => {
-      const dewReached = listTemperatures[index] < listDewPoints[index]
+      const dewReached = listTemperatures[index] <= listDewPoints[index]
       return {
         time,
         humidity: listHumidities[index],
